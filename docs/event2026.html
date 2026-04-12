@@ -7,40 +7,42 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=3600" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration - Sponsorship</title>
+    <title>Roguelike Celebration - Event 2026</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+    <link href="event2024.css" rel="stylesheet">
 
-    <style>
-      h2 {
-        margin-top: 1.8em;
+    <script>
+      var currentBio;
+      function bio(val) {
+        console.log(val, currentBio);
+        if (currentBio) {
+          $(currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $(currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
       }
-
-      .cover h3 {
-        font-size: 1.8em;
-        margin-top: 1.6em;
-      }
-
-      strong {
-        font-weight: 900;
-      }
-    </style>
+    </script>
   </head>
 
   <body>
-
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
       <nav class="hidden-xs hidden-sm">
         <ul class="nav masthead-nav">
           <li><a href="./">Intro</a></li>
-          <li><a href="./event2026.html">2026</a></li>
+          <li class="active"><a href="./event2026.html">2026</a></li>
           <li class="dropdown">
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Previous Years
@@ -61,7 +63,7 @@
           </li>
           <li><a href="./who.html">About us</a></li>
           <li><a href="./code.html">CoC</a></li>
-          <li class="active"><a href="./sponsor.html">Sponsorship</a></li>
+          <li><a href="./sponsor.html">Sponsorship</a></li>
           <li><a href="./roguelikes.html">Roguelikes?</a></li>
         </ul>
       </nav>
@@ -95,61 +97,32 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
+          <h1>Roguelike Celebration 2026</h1>
 
           <div class="inner cover">
-
-            <h1 id="seealso" class="cover-heading">Sponsorship</h1>
-
-            <p><strong>Thank you for your interest in sponsoring Roguelike Celebration! Please see <a href="https://drive.google.com/file/d/1qd0lUrP5WAlISqzqwdwgVirwCcWJVPMl/view?usp=sharing">our prospectus</a> for all details or read the summary below.</strong></p>
-
-            <p><strong>The Roguelike Celebration</strong> is a yearly community-generated weekend of talks, games, and conversations about roguelikes and related topics, including procedural generation and game design. It's for fans, players, developers, scholars, and everyone else!
-            </p>
-
-            <p>We have <strong>~600 ticketed attendees</strong> (roughly half of whom self-identify as game developers or run their own indie game studios), plus typically 2000+ viewers on our YouTube livestream and 500+ viewers on Twitch. Videos of the event are published to our YouTube channel with over 15,000 subscribers, 20,000 monthly views, and our most popular videos have been watched over 200,000 times!</p>
-
-            <h2>Benefits of Sponsorship</h2>
-
-            <p><strong>Your company</strong> will get visibility with a curious, passionate community with hundreds of independent game developers, software engineers, and enthusiasts from around the world. We are proud of the safe and inviting environment we’ve cultivated to bring together this unique group of humans from various backgrounds to talk, share, and learn about these weird games we all love.</p>
-
-            <p><strong>Your sponsorship</strong> will make Roguelike Celebration more diverse, helping with captioning, translation, server costs, art, and more. </p>
-            <h2>Contact</h2>
-            <p>Send us an email at <a
-                href="mailto:contact@roguelike.club?subject=I want to sponsor Roguelike Celebration!">contact@roguelike.club</a>
-              to get the conversation started!</p>
-
-            <h2>Sponsorship Levels</h2>
-
-            <h3>Community Sponsor ($250)</h3>
-            <ul>
-              <li>Logo on the website</li>
-              <li>Intro+outro slides</li>
-              <li>Mentioned during event</li>
-            </ul>
-
-            <h3>Gold Sponsor ($500)</h3>
-            <ul>
-              <li>Everything included in Community Sponsorship</li>
-              <li>Larger logo on website, intro, outro slides</li>
-              <li>One social media + web post leading up to event</li>
-              <li>Verbal thanks during conference</li>
-              <li>Logo on all email communications</li>
-            </ul>
-
-            <h3>Partner Sponsor ($1,000)</h3>
-            <ul>
-              <li>Everything included in Gold Sponsorship</li>
-              <li>Largest logos on website, intro, outro slides</li>
-              <li>Additional social media + web post during event</li>
-              <li>On splash slide between talks</li>
-              <li><strong>Custom room</strong> in our conference Multi-User Dungeon!</li>
-            </ul>
-<p></p>
-            <p>All prices in USD and subject to availability.</p>
-
-            Questions? Concerns? Suggestions? We'd love to hear from you at <a
-              href="mailto:contact@roguelike.club?subject=I want to sponsor Roguelike Celebration!">contact@roguelike.club</a>.
+            <section class="giant-callout">
+              <span>Oct 17&ndash;18, 2026</span><br/>
+              <span>Online</span>
+              <div><a href="https://buttondown.email/RoguelikeCelebration" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Join the mailing list!</a></div>
+              <div><a href="./cfp.html" class="btn btn-success btn-lg" role="button">Submit a talk proposal!</a></div>
+            </section>
           </div>
 
+         <h1>When and Where?</h1>
+         <p>
+           Roguelike Celebration 2026 will be held on Saturday and Sunday <strong>October 17 &ndash; October 18, 2026</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
+         </p>
+
+         <h1>Our call for presenters is <strong>open until June 28, 2026</strong>!</h1>
+         <p>
+           Technical talks, game design lessons, creative uses of procedural generation, interactive roguelike performances - we want to hear about it all! See the <a href="./cfp.html">Call for Proposals</a> for details and submission links.
+         </p>
+
+         <h1>Get Updates</h1>
+         <p>
+           For updates leading up to the conference, you can sign up to our <a href="https://buttondown.email/RoguelikeCelebration">mailing list</a>.
+         </p>
+         
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
@@ -157,8 +130,6 @@
           </div>
 
         </div>
-
-      </div>
 
     </div>
 
